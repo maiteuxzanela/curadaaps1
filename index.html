@@ -40,7 +40,7 @@
 <body class="bg-darkspace-950 text-slate-100 h-full overflow-hidden flex flex-col justify-between selection:bg-clinical-500 selection:text-darkspace-950">
 
     <!-- Header / Barra de Progresso Superior -->
-    <header class="w-full bg-darkspace-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between z-10 shrink-0">
+    <header class="w-full bg-darkspace-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between z-10">
         <div class="flex items-center space-x-3">
             <span class="p-2 bg-clinical-500/10 text-clinical-500 rounded-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,18 +57,18 @@
         </div>
     </header>
 
-    <!-- CONTAINER DOS SLIDES (Padding Superior Amplo para Respiro) -->
-    <main class="relative flex-grow flex items-center justify-center px-4 pt-16 pb-6 sm:px-8 sm:pt-24 sm:pb-8 overflow-y-auto">
+    <!-- CONTAINER DOS SLIDES -->
+    <main class="relative flex-grow flex items-center justify-center p-4 sm:p-8 pt-16 sm:pt-24 overflow-y-auto">
         
         <!-- Slide 1: Capa -->
-        <div id="slide-1" class="slide-transition w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
+        <div id="slide-1" class="slide-transition w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
             <div class="space-y-6">
                 <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Apresentação Científica</span>
                 <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
                     O Caminho para a Cura da <span class="text-transparent bg-clip-text bg-gradient-to-r from-clinical-500 to-cyan-400">APS-1</span>
                 </h2>
-                <p class="text-slate-400 text-base sm:text-lg max-w-3xl leading-relaxed">
-                    Uma análise estruturada sobre as bases genéticas da Síndrome Poliglandular Autoimune Tipo 1, as barreiras de intervenção no adulto e como a convergência entre CRISPR, bioengenharia de órgãos, lógica de programação celular e Inteligência Artificial está desenhando o futuro da cura.
+                <p class="text-slate-400 text-base sm:text-lg max-w-3xl leading-relaxed font-light">
+                    Uma análise estruturada sobre as bases genéticas da Síndrome Poliglandular Autoimune Tipo 1, as barreiras de intervenção no adulto e como a convergência entre CRISPR, bioengenharia de órgãos e Inteligência Artificial está desenhando o futuro da cura.
                 </p>
             </div>
             
@@ -84,48 +84,48 @@
             </div>
         </div>
 
-        <!-- Slide 2: A Origem e a Ciência Nacional: O Gene AIRE -->
-        <div id="slide-2" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
-            <div class="space-y-4">
-                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Fisiopatologia & Ciência Brasileira</span>
+        <!-- Slide 2: A Origem: O Gene AIRE e a Tolerância Central -->
+        <div id="slide-2" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Fisiopatologia</span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-white">A Origem da Tempestade: O Gene <span class="text-clinical-500">AIRE</span></h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
                     <div class="space-y-4">
                         <div class="border-l-4 border-clinical-500 pl-4 py-1">
-                            <h3 class="font-bold text-white text-sm sm:text-base">O "Diretor" da Escola Tímica</h3>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1">
-                                O gene <strong>AIRE</strong> (Regulador Autoimune) atua no timo, fazendo com que células locais mostrem proteínas de todos os órgãos do corpo aos linfócitos T em formação, eliminando os autorreativos.
+                            <h3 class="font-bold text-white">O "Diretor" da Escola Tímica</h3>
+                            <p class="text-sm text-slate-400 mt-1 leading-relaxed">
+                                O gene <strong>AIRE</strong> (Regulador Autoimune) atua no timo, ordenando que células locais mostrem pedaços de proteínas de todos os órgãos aos linfócitos T em treinamento. No Brasil, o renomado pesquisador <strong>Geraldo Aleixo da Silva Passos Júnior</strong> (USP) lidera investigações de ponta decodificando esse mecanismo de edição e a expressão do AIRE.
                             </p>
                         </div>
-                        <div class="border-l-4 border-cyan-500 pl-4 py-1">
-                            <h3 class="font-bold text-cyan-400 text-sm sm:text-base">Destaque Científico Nacional</h3>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1">
-                                No Brasil, as pesquisas pioneiras do <strong>Dr. Geraldo Aleixo da Silva Passos Júnior</strong> (USP Ribeirão Preto) desvendaram com precisão os mecanismos de mutação do AIRE e seu impacto no transcriptoma celular, consolidando as bases da edição genética em mTECs.
+                        <div class="border-l-4 border-rose-500 pl-4 py-1">
+                            <h3 class="font-bold text-rose-400">A Falha de Seleção</h3>
+                            <p class="text-sm text-slate-400 mt-1 leading-relaxed">
+                                Na ausência ou mutação do <em>AIRE</em>, os linfócitos que atacam o próprio corpo não são identificados e eliminados. Eles escapam para a periferia do organismo, iniciando uma destruição crônica e sequencial de tecidos vitais.
                             </p>
                         </div>
                     </div>
                     
-                    <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">A Falha na Tolerância Central</h4>
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between text-[11px] p-2 bg-emerald-950/40 border border-emerald-900/50 rounded-lg">
-                                <span class="text-emerald-400">Timo Ativo (Com AIRE)</span>
-                                <span class="px-2 py-0.5 bg-emerald-500 text-darkspace-950 rounded font-bold">Linfócito Ruim Eliminado</span>
+                    <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 flex flex-col justify-between">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">A Dinâmica da Tolerância Central</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between text-xs p-2 bg-emerald-950/40 border border-emerald-900/50 rounded-lg">
+                                <span class="text-emerald-400">Timo Saudável (Com AIRE)</span>
+                                <span class="px-2 py-0.5 bg-emerald-500 text-darkspace-950 rounded font-bold">Linfócito Autoreativo Destruído</span>
                             </div>
-                            <div class="flex items-center justify-between text-[11px] p-2 bg-rose-950/40 border border-rose-900/50 rounded-lg">
+                            <div class="flex items-center justify-between text-xs p-2 bg-rose-950/40 border border-rose-900/50 rounded-lg">
                                 <span class="text-rose-400">Timo na APS-1 (Sem AIRE)</span>
-                                <span class="px-2 py-0.5 bg-rose-500 text-white rounded font-bold">Linfócito Ruim Foge</span>
+                                <span class="px-2 py-0.5 bg-rose-500 text-white rounded font-bold">Linfócito Autoreativo Foge</span>
                             </div>
                         </div>
-                        <p class="text-[11px] text-slate-500 mt-3 italic">Mutações específicas no gene AIRE desarmam essa triagem. Sem o crivo central, linfócitos mutantes escapam e atacam progressivamente paratireoides, tireoide, ovários e tecidos ectodérmicos.</p>
+                        <p class="text-xs text-slate-500 mt-4 italic">Sem o crivo do AIRE, os linfócitos maduros agressores assumem o controle, gerando a cascata poliglandular típica (hipoparatireoidismo, menopausa precoce, gastrite atrófica).</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Slide 3: O Desafio do Adulto: O "Exército em Campo" -->
-        <div id="slide-3" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
+        <div id="slide-3" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
             <div class="space-y-6">
                 <span class="inline-block px-3 py-1 bg-amber-500/10 text-amber-400 rounded-full text-xs font-semibold tracking-wider uppercase">Desafio Clínico no Adulto</span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-white">Por que corrigir o Timo no Adulto não basta? O <span class="text-amber-400">Exército em Campo</span></h2>
@@ -133,23 +133,23 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
                     <div class="p-5 bg-slate-950/50 border border-slate-800 rounded-xl space-y-2">
                         <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold mb-2">1</div>
-                        <h3 class="font-bold text-white text-sm">Memória de Longa Vida</h3>
-                        <p class="text-xs text-slate-400">
-                            Os linfócitos agressores gerados na infância fixaram morada duradoura nos linfonodos, ossos e tecidos. Eles não dependem mais da atividade do timo para continuar dividindo-se e atacando os órgãos.
+                        <h3 class="font-bold text-white text-sm">Memória Imunológica</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Os linfócitos agressores gerados na infância tornaram-se células de memória de vida extremamente longa nos linfonodos, ossos e tecidos. Eles não dependem mais do timo para continuar atacando.
                         </p>
                     </div>
                     <div class="p-5 bg-slate-950/50 border border-slate-800 rounded-xl space-y-2">
                         <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold mb-2">2</div>
-                        <h3 class="font-bold text-white text-sm">Involução Natural</h3>
-                        <p class="text-xs text-slate-400">
-                            O timo diminui de tamanho após a puberdade. Uma intervenção genética tardia encontra uma fábrica de baixa demanda. Menos linfócitos novos nascem, mas o exército autorreativo antigo se prolifera por homeostase.
+                        <h3 class="font-bold text-white text-sm">Involução Tímica</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Após a puberdade, o timo sofre atrofia natural, sendo substituído por gordura. Uma intervenção genética tardia encontra uma fábrica de baixa produção, exigindo reativação química ou celular.
                         </p>
                     </div>
                     <div class="p-5 bg-slate-950/50 border border-slate-800 rounded-xl space-y-2">
                         <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold mb-2">3</div>
-                        <h3 class="font-bold text-white text-sm">Perda de Reguladores</h3>
-                        <p class="text-xs text-slate-400">
-                            Com a involução, o timo também reduz a produção das células protetoras (Tregs), que funcionam como os "bombeiros" reguladores da imunidade, deixando o corpo sem defesas internas contra o ataque autorreativo.
+                        <h3 class="font-bold text-white text-sm">Proliferação Homeostática</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Quando o timo do adulto reduz a atividade, os linfócitos defeituosos que já circulam dividem-se sozinhos na periferia para ocupar o "espaço vazio", perpetuando o ataque crônico e as novas comorbidades.
                         </p>
                     </div>
                 </div>
@@ -157,38 +157,38 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span><strong>Imunologia Translacional:</strong> Para curar um adulto, não basta criar um timo novo que treine novos diplomatas. A engenharia precisa de agentes inteligentes de limpeza para neutralizar o exército rebelde antigo que já circula pelo corpo.</span>
+                    <span><strong>Conclusão Imunológica:</strong> A cura real de um paciente adulto com APS-1 exige duas ações integradas: restaurar o treinamento no timo (novos diplomatas) AND varrer cirurgicamente as células rebeldes antigas (limpar o exército).</span>
                 </div>
             </div>
         </div>
 
         <!-- Slide 4: O Mapa da Cura de 4 Passos (Interativo) -->
-        <div id="slide-4" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
+        <div id="slide-4" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
             <div class="space-y-4">
                 <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Visão de Futuro</span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-white">O Mapa da Cura Definitiva para a APS-1</h2>
-                <p class="text-xs sm:text-sm text-slate-400">Clique em cada pilar para entender as frentes tecnológicas de engenharia e bioinformática:</p>
+                <p class="text-xs sm:text-sm text-slate-400">Clique em cada pilar para entender a engrenagem biológica e o nível atual de evolução científica:</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-2">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-2">
                     <!-- Pilar 1 -->
                     <button onclick="selectPillar(1)" id="pill-btn-1" class="pillar-btn p-3 bg-clinical-950/40 border-2 border-clinical-500/50 rounded-xl text-left transition duration-200">
-                        <span class="block text-xs font-bold text-clinical-500 uppercase tracking-widest">Frente 1</span>
-                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Edição CRISPR Ex Vivo</span>
+                        <span class="block text-xs font-bold text-clinical-500 uppercase tracking-widest">Pilar 1</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">CRISPR Ex Vivo</span>
                     </button>
                     <!-- Pilar 2 -->
                     <button onclick="selectPillar(2)" id="pill-btn-2" class="pillar-btn p-3 bg-slate-950/60 border border-slate-800 rounded-xl text-left transition duration-200 hover:border-slate-700">
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Frente 2</span>
-                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Timo Holográfico</span>
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Pilar 2</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Timo Artificial</span>
                     </button>
                     <!-- Pilar 3 -->
                     <button onclick="selectPillar(3)" id="pill-btn-3" class="pillar-btn p-3 bg-slate-950/60 border border-slate-800 rounded-xl text-left transition duration-200 hover:border-slate-700">
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Frente 3</span>
-                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Deleção Clonal Universal</span>
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Pilar 3</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Deleção Clonal</span>
                     </button>
                     <!-- Pilar 4 -->
                     <button onclick="selectPillar(4)" id="pill-btn-4" class="pillar-btn p-3 bg-slate-950/60 border border-slate-800 rounded-xl text-left transition duration-200 hover:border-slate-700">
-                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Frente 4</span>
-                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Medicina Regenerativa</span>
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Pilar 4</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Regenerativa</span>
                     </button>
                 </div>
 
@@ -196,171 +196,188 @@
                 <div class="mt-4 p-5 bg-slate-950 border border-slate-800 rounded-xl min-h-[160px]" id="pillar-detail-box">
                     <div id="pillar-detail-content-1" class="pillar-detail space-y-2">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-bold text-clinical-500">Frente 1: Edição Genética do AIRE Ex Vivo</h3>
-                            <span class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full">Tecnologia Concluída</span>
+                            <h3 class="text-lg font-bold text-clinical-500">Pilar 1: CRISPR Aplicado Ex Vivo</h3>
+                            <span class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full">Pronto & Consolidado</span>
                         </div>
-                        <p class="text-sm text-slate-400">
-                            A tecnologia CRISPR atual, como o <em>Base Editing</em> e <em>Prime Editing</em>, já permite corrigir com precisão absoluta as mutações do gene <strong>AIRE</strong> em células-tronco do próprio paciente em laboratório, com risco nulo de mutações indesejadas (<em>off-target</em>). Isso elimina a barreira do "endereço de entrega", pois as células são corrigidas de forma segura antes de virarem o novo timo.
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            A edição genética por <em>Base/Prime Editing</em> permite corrigir as mutações do gene <strong>AIRE</strong> nas células-tronco do próprio paciente de forma ultraprecisa em laboratório. Isso resolve inteiramente o antigo problema clínico de "entrega" do vetor de correção direto no paciente adulto.
                         </p>
                     </div>
                     <div id="pillar-detail-content-2" class="pillar-detail hidden space-y-2">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-bold text-clinical-500">Frente 2: Timo Holográfico & Hidrogéis Inteligentes</h3>
-                            <span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full">Em Engenharia de Materiais</span>
+                            <h3 class="text-lg font-bold text-clinical-500">Pilar 2: Timo Artificial & Bioimpressão Holográfica</h3>
+                            <span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full">Fase de Engenharia Ativa</span>
                         </div>
-                        <p class="text-sm text-slate-400">
-                            As células corrigidas são cultivadas no "timo artificial". Utilizando a nova <strong>Impressão 3D Holográfica Volumétrica (EPFL)</strong>, cientistas estruturam vasos sanguíneos e células em segundos, sem estressar as células com luz laser nociva. O órgão utiliza hidrogéis biomiméticos para liberar de forma lenta as proteínas de atração (CXCL12 / CCL25), trazendo novos linfócitos da medula para o treinamento.
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            A união de matrizes descelularizadas com a nova <strong>impressão holográfica do EPFL</strong> permite construir o molde de suporte celular em segundos. O foco atual é a criação de hidrogéis com ganchos de heparana para liberar as quimiocinas de atração aos pré-linfócitos de forma controlada.
                         </p>
                     </div>
                     <div id="pillar-detail-content-3" class="pillar-detail hidden space-y-2">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-bold text-clinical-500">Frente 3: Deleção Clonal Universal via CAR-T Gama-Delta</h3>
-                            <span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full">Fase de Programação Celular</span>
+                            <h3 class="text-lg font-bold text-clinical-500">Pilar 3: Deleção Clonal Alvo (O "Bisturi")</h3>
+                            <span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full">Fase Clínica em Desenvolvimento</span>
                         </div>
-                        <p class="text-sm text-slate-400">
-                            Uma solução elegante que substitui a linfoablação tóxica. Utiliza-se programação celular de lógica matemática (portas lógicas AND) em células <strong>CAR-T Gama-Delta (γδ)</strong>. Elas navegam pelo corpo identificando os soldados rebeldes pelo seu comportamento e assinatura comum de estresse e exaustão metabólica (PD-1⁺ / TIM-3⁺ / CD38⁺), desligando-os de forma cirúrgica.
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Mapeada a assinatura universal de estresse metabólico e exaustão, as células de defesa terapêuticas <strong>CAR-T Gama-Delta</strong> são programadas para circular limpando cirurgicamente os clones agressores, poupando as células saudáveis.
                         </p>
                     </div>
                     <div id="pillar-detail-content-4" class="pillar-detail hidden space-y-2">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-bold text-clinical-500">Frente 4: Medicina Regenerativa Glandular</h3>
+                            <h3 class="text-lg font-bold text-clinical-500">Pilar 4: Medicina Regenerativa Glandular</h3>
                             <span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full">Fase de Testes Experimentais</span>
                         </div>
-                        <p class="text-sm text-slate-400">
-                            A cura definitiva e fim dos medicamentos de reposição. Células produtoras de paratormônio (PTH) e estrogênios são diferenciadas de células-tronco no laboratório e encapsuladas em biomateriais de proteção imunológica sob a pele do paciente, restaurando a liberação hormonal fisiológica controlada de forma natural.
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Diferenciação de células-tronco do próprio paciente in laboratório para produzir células paratireoidianas (produtoras de PTH) e ovarianas. O implante dessas células em microcápsulas imunoprotetoras sob a pele extinguirá a necessidade das tomadas diárias de medicamentos de reposição.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 5: Frente 2: Timo Holográfico & Hidrogéis Biomiméticos -->
-        <div id="slide-5" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
+        <!-- Slide 5: Foco 1: A Nova Escola de Linfócitos (Frente 2) -->
+        <div id="slide-5" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
             <div class="space-y-6">
-                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Frente 2: Bioengenharia</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-white">Foco: Timo Holográfico & Hidrogéis Inteligentes</h2>
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Tecnologia de Órgãos</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Foco: Reconstruindo a Escola com <span class="text-clinical-500">Organoides & Hidrogéis</span></h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
                     <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 space-y-4">
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-300">A Revolução Holográfica do EPFL</h3>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-300">Como atrair os Alunos?</h3>
                         <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            O novo método de <strong>impressão holográfica volumétrica 3D</strong> do EPFL usa feixes de luz cruzados de baixa potência que solidificam estruturas complexas de tecidos e capilares em apenas 20 segundos.
+                            Como o timo adulto está atrofiado e o organoide artificial em laboratório produz poucas pistas químicas naturais de atração, os cientistas utilizam **Hidrogéis Inteligentes de Liberação Lenta**.
                         </p>
                         <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Isso impede a "morte celular por luz" e o estresse mecânico, permitindo repovoar o "esqueleto de colágeno" do órgão de forma homogênea com as células de suporte (fibroblastos) e as células epiteliais medulares corrigidas por CRISPR.
+                            Esses hidrogéis são embutidos na matriz do órgão artificial e utilizam ganchos sintéticos de heparana. Eles prendem as quimiocinas <strong>CXCL12</strong> e <strong>CCL25</strong> e as liberam a conta-gotas, garantindo que o rastro químico de atração fique ativo por meses no sangue.
                         </p>
                     </div>
                     
                     <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 space-y-4">
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-300">A Química dos Ganchos de Heparana</h3>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-300">As Estruturas de Fixação: Fibroblastos</h3>
                         <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Para evitar o "efeito explosão" (liberar todas as quimiocinas de uma vez), os novos hidrogéis imitam a natureza embutindo ganchos de <strong>sulfato de heparana</strong>.
+                            Estudos recentes publicados na revista <em>Science</em> revelaram que não basta ter as células epiteliais do timo (com o gene AIRE corrigido) para realizar a seleção. É preciso haver uma infraestrutura física de suporte fornecida por tipos especializados de <strong>Fibroblastos Tímicos</strong>.
                         </p>
                         <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Esses ganchos prendem as quimiocinas de atração <strong>CXCL12</strong> e <strong>CCL25</strong> de forma molecular. Elas são liberadas lentamente na corrente sanguínea de forma prolongada, criando um rastro químico estável que atrai novos precursores de linfócitos da medula por meses.
+                            Eles funcionam como as "cadeiras" onde os linfócitos se apoiam por semanas enquanto passam pela triagem. O co-cultivo dessas células de suporte juntamente às células do timo corrigidas é a grande chave do sucesso dos transplantes em teste.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 6: Frente 3: Deleção Clonal Universal via CAR-T Gama-Delta -->
-        <div id="slide-6" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
+        <!-- Slide 6: O Segredo da Coxa: Como é Feito o Transplante de Timo -->
+        <div id="slide-6" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
             <div class="space-y-6">
-                <span class="inline-block px-3 py-1 bg-rose-500/10 text-rose-400 rounded-full text-xs font-semibold tracking-wider uppercase">Frente 3: Imunobiologia Programada</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-white">Foco: Deleção Clonal Universal via <span class="text-rose-400">CAR-T Gama-Delta</span></h2>
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Engenharia Cirúrgica</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">O Segredo da Coxa: O Transplante <span class="text-clinical-500">Sem Cirurgia Torácica</span></h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
-                    <div class="space-y-4">
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-300">A Lógica Computacional AND</h3>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            A ciência desenvolve circuitos lógicos digitais (portas lógicas AND) baseados no receptor <strong>SynNotch</strong>. O agente CAR-T só é autorizado a descarregar sua toxicidade destruidora quando encontra uma assinatura combinada e simultânea de exaustão e hiperativação crônica.
+                    <div class="space-y-4 text-sm text-slate-400 leading-relaxed">
+                        <p>
+                            Muitos temem o transplante devido à localização do timo nativo (no peito, acima do coração). No entanto, um dos maiores segredos da imunologia moderna é que <strong>o novo timo não precisa ser colocado no peito</strong>.
                         </p>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Ao reconhecer o rastro comportamental comum dos rebeldes (PD-1⁺ / TIM-3⁺ / CD38⁺), ele limpa o organismo por completo, sem cometer o erro do "vazamento de sinal" (<em>leakage</em>) contra células saudáveis.
+                        <p>
+                            Como a comunicação entre a medula óssea e o timo ocorre 100% por via sanguínea, o transplante é realizado de forma extremamente segura no <strong>músculo quadríceps (na coxa)</strong>. O cirurgião faz apenas pequenos bolsos musculares periféricos e insere as tiras de tecido tímico processadas.
                         </p>
                     </div>
                     
-                    <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 space-y-4 flex flex-col justify-between">
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">A Plataforma de Células Gama-Delta (γδ)</h4>
-                        <p class="text-xs text-slate-300 leading-relaxed">
-                            Diferente dos linfócitos normais, as células Gama-Delta não dependem do timo danificado para amadurecer e não expressam o sistema HLA que causa rejeição.
-                        </p>
-                        <div class="p-3 bg-slate-900/80 border border-slate-800 rounded-lg text-xs">
-                            <span class="font-bold text-clinical-500 font-mono">VANTAGEM EXCLUSIVA:</span>
-                            <p class="text-slate-400 mt-1">Elas migram nativamente para os tecidos periféricos inflamados de forma ultraeficiente, caçando os clones rebeldes diretamente onde eles estão escondidos nas margens dos ossos, na derme e no estômago.</p>
-                        </div>
+                    <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 space-y-4">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300">Vantagens Críticas para o Caso Dela</h4>
+                        <ul class="space-y-3 text-xs text-slate-400">
+                            <li class="flex items-start space-x-2">
+                                <span class="text-emerald-400 font-bold">✓</span>
+                                <span><strong>Proteção Óssea Absoluta:</strong> Sem esternotomia (abrir o peito), o que seria extremamente arriscado dada a fragilidade óssea da osteopenia.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-emerald-400 font-bold">✓</span>
+                                <span><strong>Altamente Vascularizado:</strong> O quadríceps oferece o fluxo de sangue perfeito para nutrir e integrar o órgão artificial em semanas.</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-emerald-400 font-bold">✓</span>
+                                <span><strong>Recuperação Rápida:</strong> Procedimento muscular de baixo impacto, sem riscos de infecção profunda mediastinal.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 7: O Motor do Futuro: Inteligência Artificial -->
-        <div id="slide-7" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
+        <!-- Slide 7: IA e Bioinformática: O Denominador Comum Encontrado! -->
+        <div id="slide-7" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
             <div class="space-y-6">
-                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Ciência Computacional</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-white">IA e Bioinformática: Mapeando o <span class="text-transparent bg-clip-text bg-gradient-to-r from-clinical-500 to-cyan-400">Denominador Comum</span></h2>
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Inteligência Artificial</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">IA e Bioinformática: O Denominador Comum <span class="text-transparent bg-clip-text bg-gradient-to-r from-clinical-500 to-cyan-400">Foi Encontrado!</span></h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
                     <div class="space-y-4">
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            Mapear os bilhões de clones de linfócitos T rebeldes e suas infinitas variações de receptores (TCR) era impossível para mentes humanas. Modelos de aprendizado de máquina e redes neurais profundas mudaram esse cenário.
+                            Saímos da fase de procurar o rastro: os cientistas <strong>já encontraram</strong> a assinatura universal dos linfócitos T rebeldes que atacam o corpo na APS-1. Eles são identificados por marcadores específicos de estresse crônico e exaustão celular extrema: <strong>PD-1⁺, TIM-3⁺, LAG-3⁺ e CD38⁺</strong>.
                         </p>
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            Sistemas de Inteligência Artificial analisam dados de sequenciamento de célula única de pacientes com APS-1 globalmente para encontrar as assinaturas ocultas compartilhadas por essas células fugitivas, visando criar um imunoterápico que limpe de forma unificada os soldados rebeldes.
+                            O desafio agora é **engenharia de software biológico**. Os programadores estão calibrando receptores em células CAR-T com <strong>portas lógicas computacionais (Portas AND)</strong> para impedir o vazamento de sinal (<em>leakage</em>), garantindo que os agentes só ataquem quando todos os marcadores estiverem presentes.
                         </p>
                     </div>
                     
-                    <!-- Simulador de IA Interativo -->
+                    <!-- Simulador de IA Interativo Corrigido -->
                     <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 flex flex-col justify-between min-h-[220px]">
                         <div>
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-clinical-500 mb-2">Simulação: Buscador de Assinaturas de TCR via IA</h4>
-                            <p class="text-[11px] text-slate-500 mb-4">Clique abaixo para iniciar um rastreamento simulado de sequências de TCR mutantes de APS-1 em tempo real.</p>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-clinical-500 mb-2">Simulação: Calibrador de Portas Lógicas AND</h4>
+                            <p class="text-[11px] text-slate-500 mb-4">Inicie o escaneamento para calibrar o circuito lógico contra o vazamento de sinal (leakage).</p>
                         </div>
                         
                         <div class="bg-slate-900 p-3 rounded-lg border border-slate-800 font-mono text-[10px] text-slate-400 space-y-1 overflow-hidden h-24 flex flex-col justify-center" id="sim-display">
-                            <span class="text-slate-500">// Terminal de Análise de Receptores T</span>
-                            <span class="text-clinical-500">> Clique em "Iniciar Escaneamento" para começar.</span>
+                            <span class="text-slate-500">// Terminal de Programação Biológica</span>
+                            <span class="text-clinical-500">> Clique em "Iniciar Calibração" para rodar o algoritmo.</span>
                         </div>
                         
                         <button onclick="startAISimulation()" id="sim-btn" class="mt-4 w-full py-2 bg-clinical-500 text-darkspace-950 hover:bg-clinical-100 font-bold text-xs rounded-lg transition duration-200">
-                            Iniciar Escaneamento por IA
+                            Iniciar Calibração por IA
                         </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 8: Mentes Brilhantes: Os Cientistas que Cuidam do Futuro -->
-        <div id="slide-8" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
-            <div class="space-y-4">
-                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Vanguarda Global</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-white">Sentinelas em Silêncio: As Mentes por trás da Cura</h2>
-                <p class="text-xs text-slate-400">Por trás de cada avanço técnico, há uma rede global de cientistas dedicando vidas para reescrever as regras do sistema imune:</p>
+        <!-- Slide 8: Sentinelas em Silêncio: As Mentes por trás da Cura -->
+        <div id="slide-8" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Pesquisa Clínica Mundial</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Sentinelas em Silêncio: <span class="text-clinical-500">As Mentes por trás da Cura</span></h2>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
                     <div class="p-4 bg-slate-950/60 border border-slate-800 rounded-xl">
-                        <h3 class="font-bold text-clinical-500 text-xs tracking-wider uppercase font-mono">Brasil (USP)</h3>
-                        <p class="text-sm font-bold text-white mt-1">Dr. Geraldo Passos Jr.</p>
-                        <p class="text-xs text-slate-400 mt-1">Líder do laboratório de Imunogenética de Ribeirão Preto. Suas pesquisas inovadoras mapearam o transcriptoma das mTECs e os efeitos mutantes das proteínas do gene AIRE.</p>
+                        <h4 class="text-xs font-bold text-clinical-500 uppercase tracking-wider">Dr. Geraldo Passos Jr.</h4>
+                        <p class="text-xs font-semibold text-white">USP - Ribeirão Preto</p>
+                        <p class="text-[11px] text-slate-400 mt-1">Líder nacional em imunogenética, desvendando os segredos de expressão do gene AIRE.</p>
                     </div>
                     <div class="p-4 bg-slate-950/60 border border-slate-800 rounded-xl">
-                        <h3 class="font-bold text-clinical-500 text-xs tracking-wider uppercase font-mono">EUA (NIH)</h3>
-                        <p class="text-sm font-bold text-white mt-1">Dr. Michail Lionakis</p>
-                        <p class="text-xs text-slate-400 mt-1">A maior autoridade clínica mundial em APS-1. Seu laboratório no NIH lidera os grandes ensaios e o mapeamento de assinaturas celulares que alimentam as IAs diagnósticas.</p>
+                        <h4 class="text-xs font-bold text-clinical-500 uppercase tracking-wider">Dra. Aimee Payne</h4>
+                        <p class="text-xs font-semibold text-white">UPenn (Pensilvânia)</p>
+                        <p class="text-[11px] text-slate-400 mt-1">Desenvolveu a tecnologia CAAR-T, transformando a oncologia em cura autoimune.</p>
                     </div>
                     <div class="p-4 bg-slate-950/60 border border-slate-800 rounded-xl">
-                        <h3 class="font-bold text-clinical-500 text-xs tracking-wider uppercase font-mono">EUA (UCSF & UPenn)</h3>
-                        <p class="text-sm font-bold text-white mt-1">Drs. W. Lim, A. Payne & M. Milone</p>
-                        <p class="text-xs text-slate-400 mt-1">Pioneiros da biologia sintética. O grupo de Lim inventou as portas lógicas SynNotch, enquanto Payne e Milone programaram os primeiros CAAR-Ts autoimunes.</p>
+                        <h4 class="text-xs font-bold text-clinical-500 uppercase tracking-wider">Dr. Wendell Lim</h4>
+                        <p class="text-xs font-semibold text-white">UCSF (Califórnia)</p>
+                        <p class="text-[11px] text-slate-400 mt-1">Pioneiro da biologia sintética, inventor dos circuitos de portas lógicas SynNotch.</p>
+                    </div>
+                    <div class="p-4 bg-slate-950/60 border border-slate-800 rounded-xl">
+                        <h4 class="text-xs font-bold text-clinical-500 uppercase tracking-wider">Dr. Michail Lionakis</h4>
+                        <p class="text-xs font-semibold text-white">NIH (Maryland)</p>
+                        <p class="text-[11px] text-slate-400 mt-1">Comanda o maior banco de dados mundial de sequenciamento genético da APS-1.</p>
+                    </div>
+                    <div class="p-4 bg-slate-950/60 border border-slate-800 rounded-xl">
+                        <h4 class="text-xs font-bold text-clinical-500 uppercase tracking-wider">Dr. Eystein Husebye</h4>
+                        <p class="text-xs font-semibold text-white">Universidade de Bergen</p>
+                        <p class="text-[11px] text-slate-400 mt-1">Líder europeu do EurAPECED, integrando o transplante de timo na rotina clínica.</p>
+                    </div>
+                    <div class="p-4 bg-slate-950/60 border border-slate-800/60 rounded-xl flex items-center justify-center border-dashed">
+                        <p class="text-[10px] text-slate-500 text-center italic">Centenas de pesquisadores e engenheiros de bioinformática conectados em rede global.</p>
                     </div>
                 </div>
-                <p class="text-xs text-slate-500 italic mt-2 text-center">Enquanto ela faz o seu acompanhamento nos hospitais universitários, este exército de cientistas trabalha em silêncio para preparar o amanhã.</p>
             </div>
         </div>
 
         <!-- Slide 9: O Horizonte Clínico & Conclusão -->
-        <div id="slide-9" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[480px] my-auto">
+        <div id="slide-9" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
             <div class="space-y-6">
                 <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Perspectivas Reais</span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-white">Horizonte Clínico: Preservando a Vida Hoje</h2>
@@ -371,7 +388,7 @@
                             Enquanto as frentes de cura amadurecem nas bancadas de pesquisa e ensaios clínicos, o foco absoluto do tratamento nos hospitais universitários permanece sendo o <strong>controle de danos e manutenção do equilíbrio metabólico</strong>.
                         </p>
                         <p class="text-sm text-slate-400 leading-relaxed">
-                            A dedicação minuciosa em monitorar exames de urina de 24 horas (proteção renal), realizar reposições hormonais calibradas com estrogênios e cálcio, e praticar exercícios resistidos regulares para a osteopenia é o que garantirá que o organismo dela chegue forte e saudável no dia da chegada definitiva da cura.
+                            A dedicação minuciosa em monitorar exames de urina de 24 horas (proteção renal contra cistos), realizar reposições hormonais calibradas com estrogênios e cálcio, e praticar exercícios focados para a osteopenia precoce é o que garantirá que o organismo dela chegue forte e perfeitamente apto no dia da chegada definitiva da cura.
                         </p>
                     </div>
                     
@@ -391,7 +408,7 @@
     </main>
 
     <!-- Barra de Navegação Inferior -->
-    <footer class="w-full bg-darkspace-900 border-t border-slate-800 px-6 py-4 flex items-center justify-between z-10 shrink-0">
+    <footer class="w-full bg-darkspace-900 border-t border-slate-800 px-6 py-4 flex items-center justify-between z-10">
         <button onclick="prevSlide()" class="px-4 py-2 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white rounded-lg text-xs font-semibold tracking-wider transition duration-200 flex items-center space-x-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -421,7 +438,7 @@
     </footer>
 
     <!-- Painel de Disclaimer Flutuante (Obrigatório) -->
-    <div class="bg-darkspace-950 border-t border-slate-800 text-[10px] sm:text-xs text-slate-500 px-6 py-2 text-center leading-relaxed shrink-0">
+    <div class="bg-darkspace-950 border-t border-slate-800 text-[10px] sm:text-xs text-slate-500 px-6 py-2 text-center leading-relaxed">
         <strong>Informações fornecidas têm caráter educativo e não substituem avaliação médica individualizada. Consulte sempre um endocrinologista ou imunologista para condutas pessoais.</strong>
     </div>
 
@@ -473,7 +490,7 @@
                 }
             }
             
-            // Atualizar números do header
+            // Atualizar numbers do header
             document.getElementById('current-slide-num').innerText = currentSlide;
             
             // Atualizar os círculos indicadores
@@ -541,30 +558,30 @@
                 simInterval = null;
             }
             
-            btn.innerText = "Analisando Dados...";
+            btn.innerText = "Processando Circuitos...";
             btn.disabled = true;
             display.innerHTML = "";
             
             const steps = [
-                "> Iniciando barramento de clusters de dados de scRNA-seq...",
-                "> Carregando sequências de TCR de 250 pacientes com APS-1...",
-                "> Varrendo domínios de dobramento em 3D por AlphaFold-3...",
-                "> Processando: CAS_CASS_TRAV_TCRB [Alfa e Beta heterodímeros]",
-                "> IA identificou 22 milhões de padrões variáveis de epítopos...",
-                "> Eliminando células reativas contra patógenos saudáveis (gripe/fungos)...",
-                "> Filtrando assinaturas homólogas residuais no estômago e pele...",
-                "> ATENÇÃO: Encontrado agrupamento estrutural constante em 84% das amostras!",
-                "> ASSINATURA AUTOIMUNE ISOLADA: [Receptor_C_Antigen_Alpha9_V1]",
-                "> Alvo para vetor CAAR-T definido com sucesso!"
+                "> scRNA-seq Concluído: Assinatura de estresse mapeada com sucesso!",
+                "> Identificadores isolados: [PD-1+, TIM-3+, LAG-3+, CD38+]",
+                "> Iniciando calibração da porta lógica AND com circuito SynNotch...",
+                "> Analisando limiar de disparo contra falsos positivos (vazamento de sinal)...",
+                "> Ajustando sensibilidade do receptor CAR anti-TIM-3 e anti-CD38...",
+                "> Simulação 1: Contato com linfócito comum (Apenas CD38+) -> Bloqueado (Leakage: 0%).",
+                "> Simulação 2: Contato com linfócito exausto (PD-1+ e CD38+) -> Bloqueado (Leakage: 0%).",
+                "> Simulação 3: Contato com clone agressor APS-1 (PD-1+/TIM-3+/LAG-3+/CD38+) -> Ativado!",
+                "> Circuito lógico SynNotch calibrado com margem de segurança de 99.8%.",
+                "> Vetor CAR-T Gama-Delta configurado e pronto para varredura periférica!"
             ];
             
             let currentStep = 0;
             simInterval = setInterval(() => {
                 if (currentStep < steps.length) {
                     const line = document.createElement('span');
-                    if (steps[currentStep].startsWith('> ATENÇÃO')) {
+                    if (steps[currentStep].startsWith('> Circuito lógico')) {
                         line.className = "text-amber-400 font-bold";
-                    } else if (steps[currentStep].startsWith('> ASSINATURA')) {
+                    } else if (steps[currentStep].startsWith('> Vetor CAR-T')) {
                         line.className = "text-clinical-500 font-bold animate-pulse";
                     } else {
                         line.className = "text-slate-300";
@@ -575,7 +592,7 @@
                     currentStep++;
                 } else {
                     clearInterval(simInterval);
-                    btn.innerText = "Escaneamento Concluído!";
+                    btn.innerText = "Calibração Concluída!";
                     btn.disabled = false;
                     btn.className = "mt-4 w-full py-2 bg-emerald-500 text-darkspace-950 font-bold text-xs rounded-lg";
                 }
