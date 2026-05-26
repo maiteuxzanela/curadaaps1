@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Caminho para a Cura da APS-1</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clinical: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            800: '#115e59',
+                            950: '#042f2e',
+                        },
+                        darkspace: {
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide-transition {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-darkspace-950 text-slate-100 h-full overflow-hidden flex flex-col justify-between selection:bg-clinical-500 selection:text-darkspace-950">
+
+    <!-- Header / Barra de Progresso Superior -->
+    <header class="w-full bg-darkspace-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between z-10">
+        <div class="flex items-center space-x-3">
+            <span class="p-2 bg-clinical-500/10 text-clinical-500 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+            </span>
+            <div>
+                <h1 class="text-sm font-semibold tracking-wider text-slate-300 uppercase">APS-1 Research Panel</h1>
+                <p class="text-xs text-clinical-500">Mapeamento Clínico & Perspectivas de Cura</p>
+            </div>
+        </div>
+        <div class="text-xs text-slate-400 font-mono hidden sm:block">
+            Slide <span id="current-slide-num" class="text-clinical-500 font-bold">1</span> de <span id="total-slides-num">8</span>
+        </div>
+    </header>
+
+    <!-- CONTAINER DOS SLIDES -->
+    <main class="relative flex-grow flex items-center justify-center px-4 py-12 sm:px-8 sm:py-16 pt-16 sm:pt-24 pb-16 overflow-y-auto">
+        
+        <!-- Slide 1: Capa -->
+        <div id="slide-1" class="slide-transition w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Apresentação Científica</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    O Caminho para a Cura da <span class="text-transparent bg-clip-text bg-gradient-to-r from-clinical-500 to-cyan-400">APS-1</span>
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg max-w-3xl leading-relaxed">
+                    Uma análise estruturada sobre as bases genéticas da Síndrome Poliglandular Autoimune Tipo 1, as barreiras de intervenção no adulto e como a convergência entre CRISPR, bioengenharia de órgãos e Inteligência Artificial está desenhando o futuro da cura.
+                </p>
+            </div>
+            
+            <div class="mt-8 border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-clinical-500/20 flex items-center justify-center text-clinical-500 font-bold text-sm">EM</div>
+                    <div>
+                        <p class="text-xs font-bold text-white">Especialista Médico e Pesquisador Sênior</p>
+                        <p class="text-xs text-slate-400">Análise de Caso & Engenharia Imunológica de Precisão</p>
+                    </div>
+                </div>
+                <div class="text-xs text-slate-500 italic">Use as setas do teclado ou os botões inferiores para navegar</div>
+            </div>
+        </div>
+
+        <!-- Slide 2: A Origem: O Gene AIRE e a Tolerância Central -->
+        <div id="slide-2" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Fisiopatologia</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">A Origem da Tempestade: O Gene <span class="text-clinical-500">AIRE</span></h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-clinical-500 pl-4 py-1">
+                            <h3 class="font-bold text-white">O "Diretor" da Escola Tímica</h3>
+                            <p class="text-sm text-slate-400 mt-1">
+                                O gene <strong>AIRE</strong> (Regulador Autoimune) atua no timo, ordenando que células locais mostrem pedaços de proteínas de todos os órgãos aos linfócitos T em treinamento.
+                            </p>
+                        </div>
+                        <div class="border-l-4 border-rose-500 pl-4 py-1">
+                            <h3 class="font-bold text-rose-400">A Falha de Seleção</h3>
+                            <p class="text-sm text-slate-400 mt-1">
+                                Na ausência ou mutação do <em>AIRE</em>, os linfócitos que atacam o próprio corpo não são identificados e eliminados. Eles escapam para a periferia do organismo, iniciando uma destruição crônica e sequencial.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 flex flex-col justify-between">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">A Dinâmica da Tolerância Central</h4>
+                        <!-- Mini infográfico animado -->
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between text-xs p-2 bg-emerald-950/40 border border-emerald-900/50 rounded-lg">
+                                <span class="text-emerald-400">Timo Saudável (Com AIRE)</span>
+                                <span class="px-2 py-0.5 bg-emerald-500 text-darkspace-950 rounded font-bold">Linfócito Autoreativo Destruído</span>
+                            </div>
+                            <div class="flex items-center justify-between text-xs p-2 bg-rose-950/40 border border-rose-900/50 rounded-lg">
+                                <span class="text-rose-400">Timo na APS-1 (Sem AIRE)</span>
+                                <span class="px-2 py-0.5 bg-rose-500 text-white rounded font-bold">Linfócito Autoreativo Foge</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-4 italic">Sem o crivo do AIRE, os linfócitos maduros agressores assumem o controle, gerando a cascata poliglandular típica (hipoparatireoidismo, menopausa precoce, gastrite atrófica).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: O Desafio do Adulto: O "Exército em Campo" -->
+        <div id="slide-3" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-amber-500/10 text-amber-400 rounded-full text-xs font-semibold tracking-wider uppercase">Desafio Clínico no Adulto</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Por que corrigir o Timo no Adulto não basta? O <span class="text-amber-400">Exército em Campo</span></h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                    <div class="p-5 bg-slate-950/50 border border-slate-800 rounded-xl space-y-2">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold mb-2">1</div>
+                        <h3 class="font-bold text-white text-sm">Memória Imunológica</h3>
+                        <p class="text-xs text-slate-400">
+                            Os linfócitos agressores gerados na infância tornaram-se células de memória de vida extremamente longa nos linfonodos, ossos e tecidos. Eles não dependem mais do timo para continuar atacando.
+                        </p>
+                    </div>
+                    <div class="p-5 bg-slate-950/50 border border-slate-800 rounded-xl space-y-2">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold mb-2">2</div>
+                        <h3 class="font-bold text-white text-sm">Involução Tímica</h3>
+                        <p class="text-xs text-slate-400">
+                            Após a puberdade, o timo sofre atrofia natural, sendo substituído por gordura. Uma intervenção genética tardia encontra uma fábrica de baixa produção, exigindo reativação química ou celular.
+                        </p>
+                    </div>
+                    <div class="p-5 bg-slate-950/50 border border-slate-800 rounded-xl space-y-2">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold mb-2">3</div>
+                        <h3 class="font-bold text-white text-sm">Proliferação Homeostática</h3>
+                        <p class="text-xs text-slate-400">
+                            Quando o timo do adulto reduz a atividade, os linfócitos defeituosos que já circulam dividem-se sozinhos na periferia para ocupar o "espaço vazio", perpetuando o ataque crônico e as novas comorbidades.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl flex items-center space-x-3 text-xs text-slate-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span><strong>Conclusão Imunológica:</strong> A cura real de um paciente adulto com APS-1 exige duas ações integradas: restaurar o treinamento no timo (novos diplomatas) AND varrer cirurgicamente as células rebeldes antigas (limpar o exército).</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: O Mapa da Cura de 5 Passos (Interativo) -->
+        <div id="slide-4" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-4">
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Visão de Futuro</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">O Mapa da Cura Definitiva para a APS-1</h2>
+                <p class="text-xs sm:text-sm text-slate-400">Clique em cada pilar para entender a engrenagem biológica e o nível atual de evolução científica:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-3 mt-2">
+                    <!-- Pilar 1 -->
+                    <button onclick="selectPillar(1)" id="pill-btn-1" class="pillar-btn p-3 bg-clinical-950/40 border-2 border-clinical-500/50 rounded-xl text-left transition duration-200">
+                        <span class="block text-xs font-bold text-clinical-500 uppercase tracking-widest">Pilar 1</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">CRISPR Ex Vivo</span>
+                    </button>
+                    <!-- Pilar 2 -->
+                    <button onclick="selectPillar(2)" id="pill-btn-2" class="pillar-btn p-3 bg-slate-950/60 border border-slate-800 rounded-xl text-left transition duration-200 hover:border-slate-700">
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Pilar 2</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Organoides Tímicos</span>
+                    </button>
+                    <!-- Pilar 3 -->
+                    <button onclick="selectPillar(3)" id="pill-btn-3" class="pillar-btn p-3 bg-slate-950/60 border border-slate-800 rounded-xl text-left transition duration-200 hover:border-slate-700">
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Pilar 3</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Linfoablação</span>
+                    </button>
+                    <!-- Pilar 4 -->
+                    <button onclick="selectPillar(4)" id="pill-btn-4" class="pillar-btn p-3 bg-slate-950/60 border border-slate-800 rounded-xl text-left transition duration-200 hover:border-slate-700">
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Pilar 4</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Deleção Clonal</span>
+                    </button>
+                    <!-- Pilar 5 -->
+                    <button onclick="selectPillar(5)" id="pill-btn-5" class="pillar-btn p-3 bg-slate-950/60 border border-slate-800 rounded-xl text-left transition duration-200 hover:border-slate-700">
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Pilar 5</span>
+                        <span class="block font-bold text-white text-xs sm:text-sm mt-1">Regenerativa</span>
+                    </button>
+                </div>
+
+                <!-- Detalhe do Pilar Selecionado -->
+                <div class="mt-4 p-5 bg-slate-950 border border-slate-800 rounded-xl min-h-[160px]" id="pillar-detail-box">
+                    <div id="pillar-detail-content-1" class="pillar-detail space-y-2">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-clinical-500">Pilar 1: CRISPR Aplicado Ex Vivo</h3>
+                            <span class="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-full">Pronto em Laboratório</span>
+                        </div>
+                        <p class="text-sm text-slate-400">
+                            A edição genética avançou muito com o <em>Base Editing</em> e <em>Prime Editing</em>, que permitem corrigir as mutações do gene <strong>AIRE</strong> nas células epiteliais medulares do timo de forma ultraprecisa e segura, diretamente nas células-tronco do paciente coletadas e manipuladas em laboratório. Isso resolve inteiramente o antigo problema clínico de "entrega" do vetor de correção diretamente no corpo do paciente adulto.
+                        </p>
+                    </div>
+                    <div id="pillar-detail-content-2" class="pillar-detail hidden space-y-2">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-clinical-500">Pilar 2: Organoides Tímicos Tridimensionais</h3>
+                            <span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full">Fase Pré-Clínica Avançada</span>
+                        </div>
+                        <p class="text-sm text-slate-400">
+                            Uma vez corrigidas as células por CRISPR, elas são cultivadas em moldes descelularizados (esqueleto de colágeno natural de timos doadores lavados quimicamente). Esse "timo de proveta" mimetiza as estruturas de córtex e medula. No entanto, necessita de nanotecnologia associada para a liberação de pistas químicas de atração (como quimiocinas) para recrutar com sucesso as células virgens da medula do paciente quando transplantado.
+                        </p>
+                    </div>
+                    <div id="pillar-detail-content-3" class="pillar-detail hidden space-y-2">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-400">Pilar 3: Linfoablação (O "Reset" Bruto)</h3>
+                            <span class="px-2 py-1 bg-rose-500/10 text-rose-400 text-xs font-semibold rounded-full">Disponível, mas de Alto Risco</span>
+                        </div>
+                        <p class="text-sm text-slate-400">
+                            Consiste no uso de quimioterapias pesadas e anticorpos pan-linfocíticos para "zerar" a imunidade do paciente, eliminando o exército antigo de memória antes de introduzir o novo timo corrigido. Trata-se de um procedimento de força bruta extremamente tóxico que deixa o paciente exposto a infecções graves em uma janela crítica, o que representa um perigo de vida inaceitável para terapia eletiva.
+                        </p>
+                    </div>
+                    <div id="pillar-detail-content-4" class="pillar-detail hidden space-y-2">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-clinical-500">Pilar 4: Deleção Clonal Alvo (O "Bisturi" Molecular)</h3>
+                            <span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full">Fase Clínica em Desenvolvimento</span>
+                        </div>
+                        <p class="text-sm text-slate-400">
+                            Representa o futuro substituto da linfoablação tóxica. Por meio de engenharia celular (como terapias CAR-T ou vacinas inversas), os médicos conseguem direcionar agentes para localizar e destruir especificamente apenas as populações de linfócitos T agressores de memória do paciente, mantendo todas as demais células de defesa do corpo intactas contra gripes e fungos.
+                        </p>
+                    </div>
+                    <div id="pillar-detail-content-5" class="pillar-detail hidden space-y-2">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-clinical-500">Pilar 5: Medicina Regenerativa Glandular</h3>
+                            <span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold rounded-full">Fase de Testes Experimentais</span>
+                        </div>
+                        <p class="text-sm text-slate-400">
+                            O timo corrigido impede novos ataques, mas não regenera as glândulas destruídas na infância (como paratireoides e ovários). O pilar final exige o cultivo em laboratório de células funcionais produtoras de PTH e estrogênio a partir de células-tronco do próprio paciente, encapsuladas em biomateriais de proteção sob a pele, para eliminar definitivamente a necessidade de tomadas diárias de medicamentos de reposição.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Foco 1: A Nova Escola de Linfócitos (Frentes 1 & 2) -->
+        <div id="slide-5" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Tecnologia de Órgãos</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Foco: Reconstruindo a Escola com <span class="text-clinical-500">Organoides & Hidrogéis</span></h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
+                    <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 space-y-4">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-300">Como atrair os Alunos?</h3>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                            Como o timo adulto está atrofiado e o organoide artificial em laboratório produz poucas pistas químicas naturais de atração, os cientistas utilizam **Hidrogéis Inteligentes de Liberação Lenta**.
+                        </p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                            Esses hidrogéis são embutidos na matriz do órgão artificial e funcionam como "bombas de perfume" biológicas, liberando as quimiocinas <strong>CXCL12</strong> e <strong>CCL25</strong> de forma constante no fluxo sanguíneo do paciente por meses, criando uma trilha molecular que guia os linfócitos da medula direto para o treinamento no organoide.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 space-y-4">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-300">As Estruturas de Fixação: Fibroblastos</h3>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                            Estudos recentes publicados na revista <em>Science</em> revelaram que não basta ter as células epiteliais do timo (com o gene AIRE corrigido) para realizar a seleção. É preciso haver uma infraestrutura física de suporte fornecida por tipos especializados de <strong>Fibroblastos Tímicos</strong>.
+                        </p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                            Eles funcionam como as "cadeiras" onde os linfócitos se apoiam por semanas enquanto passam pela triagem. O co-cultivo dessas células de suporte juntamente às células do timo corrigidas é a grande chave do sucesso dos transplantes em teste.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Foco 2: Neutralizando o Exército Antigo (Frentes 3 & 4) -->
+        <div id="slide-6" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-rose-500/10 text-rose-400 rounded-full text-xs font-semibold tracking-wider uppercase">Estratégia de Sobrevivência</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Foco: Deleção Clonal Alvo como <span class="text-rose-400">"Disjuntor de Emergência"</span></h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
+                    <div class="space-y-4">
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Na APS-1, os anticorpos e linfócitos rebeldes de memória atacam alvos extremamente diferentes em cada glândula ou tecido do corpo, tornando o design de um "coquetel" imunológico completo um desafio gigantesco.
+                        </p>
+                        <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-300">A Estratégia de Alvos Vitais</h3>
+                            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                                Em vez de tratar a autoimunidade de forma global e assumir os altos riscos envolvidos, a comunidade científica prioriza o uso dessas armas biológicas como um <strong>sistema de airbag</strong> para manifestações com alto risco vital imediato, especialmente no pulmão e fígado.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-950/60 p-6 rounded-xl border border-slate-800 space-y-4 flex flex-col justify-between">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Monitoramento Ativo & Resposta Rápida</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-2 text-xs p-2.5 bg-slate-900/80 border border-slate-800 rounded-lg">
+                                <span class="px-1.5 py-0.5 bg-clinical-500/20 text-clinical-500 rounded text-[10px] font-bold font-mono">PULMÃO</span>
+                                <p class="text-slate-300">Se houver indício de <strong>pneumonite autoimune</strong>, usa-se a terapia celular direcionada contra o antígeno <strong>KCNRG</strong>, paralisando a agressão local imediatamente.</p>
+                            </div>
+                            <div class="flex items-start space-x-2 text-xs p-2.5 bg-slate-900/80 border border-slate-800 rounded-lg">
+                                <span class="px-1.5 py-0.5 bg-cyan-500/20 text-cyan-400 rounded text-[10px] font-bold font-mono">FÍGADO</span>
+                                <p class="text-slate-300">Na suspeita de <strong>hepatite autoimune fulminante</strong>, aciona-se a infusão direcionada contra o alvo hepático <strong>CYP2A6</strong>, protegendo a vida sem precisar de um reset sistêmico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: O Motor do Futuro: Inteligência Artificial -->
+        <div id="slide-7" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Ciência Computacional</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">IA e Bioinformática: Mapeando o <span class="text-transparent bg-clip-text bg-gradient-to-r from-clinical-500 to-cyan-400">Denominador Comum</span></h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
+                    <div class="space-y-4">
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Mapear os bilhões de clones de linfócitos T rebeldes e suas infinitas variações de receptores (TCR) era impossível para mentes humanas. Modelos de aprendizado de máquina e redes neurais profundas mudaram esse cenário.
+                        </p>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Sistemas de Inteligência Artificial analisam dados de sequenciamento de célula única de pacientes com APS-1 globalmente para encontrar as assinaturas ocultas compartilhadas por essas células fugitivas, visando criar um imunoterápico que limpe de forma unificada os soldados rebeldes.
+                        </p>
+                    </div>
+                    
+                    <!-- Simulador de IA Interativo -->
+                    <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 flex flex-col justify-between min-h-[220px]">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-clinical-500 mb-2">Simulação: Buscador de Assinaturas de TCR via IA</h4>
+                            <p class="text-[11px] text-slate-500 mb-4">Clique abaixo para iniciar um rastreamento simulado de sequências de TCR mutantes de APS-1 em tempo real.</p>
+                        </div>
+                        
+                        <div class="bg-slate-900 p-3 rounded-lg border border-slate-800 font-mono text-[10px] text-slate-400 space-y-1 overflow-hidden h-24 flex flex-col justify-center" id="sim-display">
+                            <span class="text-slate-500">// Terminal de Análise de Receptores T</span>
+                            <span class="text-clinical-500">> Clique em "Iniciar Escaneamento" para começar.</span>
+                        </div>
+                        
+                        <button onclick="startAISimulation()" id="sim-btn" class="mt-4 w-full py-2 bg-clinical-500 text-darkspace-950 hover:bg-clinical-100 font-bold text-xs rounded-lg transition duration-200">
+                            Iniciar Escaneamento por IA
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: O Horizonte Clínico & Conclusão -->
+        <div id="slide-8" class="slide-transition hidden w-full max-w-5xl bg-darkspace-900 border border-slate-800 rounded-2xl p-6 sm:p-12 shadow-2xl flex flex-col justify-between min-h-[500px] my-auto">
+            <div class="space-y-6">
+                <span class="inline-block px-3 py-1 bg-clinical-500/10 text-clinical-500 rounded-full text-xs font-semibold tracking-wider uppercase">Perspectivas Reais</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Horizonte Clínico: Preservando a Vida Hoje</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
+                    <div class="space-y-4">
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Enquanto as frentes de cura amadurecem nas bancadas de pesquisa e ensaios clínicos, o foco absoluto do tratamento nos hospitais universitários permanece sendo o <strong>controle de danos e manutenção do equilíbrio metabólico</strong>.
+                        </p>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            A dedicação minuciosa em monitorar exames de urina de 24 horas (proteção renal), realizar reposições hormonais calibradas com estrogênios e cálcio, realizar cirurgia de catarata com segurança perioperatória e praticar exercícios para a osteopenia é o que garantirá que o organismo dela chegue forte e saudável no dia da chegada definitiva da cura.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-clinical-950/30 p-6 rounded-xl border border-clinical-800/50 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-sm font-bold text-clinical-500 uppercase tracking-wider mb-2">Mensagem do Especialista</h3>
+                            <p class="text-xs sm:text-sm text-slate-300 italic leading-relaxed">
+                                "A história clínica da sua amiga é uma joia de resiliência. A ciência de vanguarda não estuda apenas casos raros para buscar uma resposta individual, mas porque estes casos nos revelam como reescrever as regras do sistema imune de toda a humanidade. Cada etapa do monitoramento atual dela é uma ponte sólida em direção a esse futuro brilhante que a bioengenharia molecular está ativamente construindo."
+                            </p>
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-6 tracking-wide">Apresentação elaborada sob diretrizes de pesquisa clínica em imunologia translacional de 2026.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Barra de Navegação Inferior -->
+    <footer class="w-full bg-darkspace-900 border-t border-slate-800 px-6 py-4 flex items-center justify-between z-10">
+        <button onclick="prevSlide()" class="px-4 py-2 bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white rounded-lg text-xs font-semibold tracking-wider transition duration-200 flex items-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            <span>Anterior</span>
+        </button>
+        
+        <!-- Indicadores de Slides centralizados (Desktop) -->
+        <div class="hidden sm:flex items-center space-x-2">
+            <button onclick="goToSlide(1)" class="slide-indicator w-2.5 h-2.5 rounded-full bg-clinical-500 transition duration-200"></button>
+            <button onclick="goToSlide(2)" class="slide-indicator w-2.5 h-2.5 rounded-full bg-slate-700 transition duration-200"></button>
+            <button onclick="goToSlide(3)" class="slide-indicator w-2.5 h-2.5 rounded-full bg-slate-700 transition duration-200"></button>
+            <button onclick="goToSlide(4)" class="slide-indicator w-2.5 h-2.5 rounded-full bg-slate-700 transition duration-200"></button>
+            <button onclick="goToSlide(5)" class="slide-indicator w-2.5 h-2.5 rounded-full bg-slate-700 transition duration-200"></button>
+            <button onclick="goToSlide(6)" class="slide-indicator w-2.5 h-2.5 rounded-full bg-slate-700 transition duration-200"></button>
+            <button onclick="goToSlide(7)" class="slide-indicator w-2.5 h-2.5 rounded-full bg-slate-700 transition duration-200"></button>
+            <button onclick="goToSlide(8)" class="slide-indicator w-2.5 h-2.5 rounded-full bg-slate-700 transition duration-200"></button>
+        </div>
+
+        <button onclick="nextSlide()" class="px-4 py-2 bg-clinical-500 text-darkspace-950 hover:bg-clinical-100 font-bold rounded-lg text-xs tracking-wider transition duration-200 flex items-center space-x-1">
+            <span>Próximo</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </footer>
+
+    <!-- Painel de Disclaimer Flutuante (Obrigatório) -->
+    <div class="bg-darkspace-950 border-t border-slate-800 text-[10px] sm:text-xs text-slate-500 px-6 py-2 text-center leading-relaxed">
+        <strong>Informações fornecidas têm caráter educativo e não substituem avaliação médica individualizada. Consulte sempre um endocrinologista ou imunologista para condutas pessoais.</strong>
+    </div>
+
+    <!-- Scripts de Gerenciamento da Apresentação -->
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 8;
+        
+        // Touch Swipe Support
+        let touchstartX = 0;
+        let touchendX = 0;
+        
+        const mainContainer = document.querySelector('main');
+        mainContainer.addEventListener('touchstart', e => {
+            touchstartX = e.changedTouches[0].screenX;
+        });
+        
+        mainContainer.addEventListener('touchend', e => {
+            touchendX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+        
+        function handleSwipe() {
+            if (touchstartX - touchendX > 50) {
+                nextSlide(); // Swipe esquerda
+            }
+            if (touchendX - touchstartX > 50) {
+                prevSlide(); // Swipe direita
+            }
+        }
+
+        // Navegação por Teclado (Arrow Keys)
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "ArrowRight") {
+                nextSlide();
+            } else if (event.key === "ArrowLeft") {
+                prevSlide();
+            }
+        });
+
+        function updateSlideUI() {
+            // Atualizar visibilidade dos slides
+            for (let i = 1; i <= totalSlides; i++) {
+                const slide = document.getElementById(`slide-${i}`);
+                if (i === currentSlide) {
+                    slide.classList.remove('hidden');
+                } else {
+                    slide.classList.add('hidden');
+                }
+            }
+            
+            // Atualizar números do header
+            document.getElementById('current-slide-num').innerText = currentSlide;
+            
+            // Atualizar os círculos indicadores
+            const indicators = document.querySelectorAll('.slide-indicator');
+            indicators.forEach((indicator, index) => {
+                if (index + 1 === currentSlide) {
+                    indicator.classList.remove('bg-slate-700');
+                    indicator.classList.add('bg-clinical-500');
+                } else {
+                    indicator.classList.remove('bg-clinical-500');
+                    indicator.classList.add('bg-slate-700');
+                }
+            });
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlideUI();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlideUI();
+            }
+        }
+
+        function goToSlide(slideNum) {
+            currentSlide = slideNum;
+            updateSlideUI();
+        }
+
+        // Seleção de Pilares na Slide 4
+        function selectPillar(num) {
+            // Remover estilos de todos os botões de pilares
+            const btns = document.querySelectorAll('.pillar-btn');
+            btns.forEach((btn, index) => {
+                btn.className = "pillar-btn p-3 bg-slate-950/60 border border-slate-800 rounded-xl text-left transition duration-200 hover:border-slate-700";
+                const spanLabel = btn.querySelector('span:first-child');
+                spanLabel.className = "block text-xs font-bold text-slate-400 uppercase tracking-widest";
+            });
+
+            // Ativar estilo do selecionado
+            const activeBtn = document.getElementById(`pill-btn-${num}`);
+            activeBtn.className = "pillar-btn p-3 bg-clinical-950/40 border-2 border-clinical-500/50 rounded-xl text-left transition duration-200";
+            const activeSpan = activeBtn.querySelector('span:first-child');
+            activeSpan.className = "block text-xs font-bold text-clinical-500 uppercase tracking-widest";
+
+            // Mostrar o respectivo texto de detalhe
+            const details = document.querySelectorAll('.pillar-detail');
+            details.forEach(detail => detail.classList.add('hidden'));
+            document.getElementById(`pillar-detail-content-${num}`).classList.remove('hidden');
+        }
+
+        // Simulação de IA da Slide 7
+        let simInterval = null;
+        function startAISimulation() {
+            const display = document.getElementById('sim-display');
+            const btn = document.getElementById('sim-btn');
+            
+            if (simInterval) {
+                clearInterval(simInterval);
+                simInterval = null;
+            }
+            
+            btn.innerText = "Analisando Dados...";
+            btn.disabled = true;
+            display.innerHTML = "";
+            
+            const steps = [
+                "> Iniciando barramento de clusters de dados de scRNA-seq...",
+                "> Carregando sequências de TCR de 250 pacientes com APS-1...",
+                "> Varrendo domínios de dobramento em 3D por AlphaFold-3...",
+                "> Processando: CAS_CASS_TRAV_TCRB [Alfa e Beta heterodímeros]",
+                "> IA identificou 22 milhões de padrões variáveis de epítopos...",
+                "> Eliminando células reativas contra patógenos saudáveis (gripe/fungos)...",
+                "> Filtrando assinaturas homólogas residuais no estômago e pele...",
+                "> ATENÇÃO: Encontrado agrupamento estrutural constante em 84% das amostras!",
+                "> ASSINATURA AUTOIMUNE ISOLADA: [Receptor_C_Antigen_Alpha9_V1]",
+                "> Alvo para vetor CAAR-T definido com sucesso!"
+            ];
+            
+            let currentStep = 0;
+            simInterval = setInterval(() => {
+                if (currentStep < steps.length) {
+                    const line = document.createElement('span');
+                    if (steps[currentStep].startsWith('> ATENÇÃO')) {
+                        line.className = "text-amber-400 font-bold";
+                    } else if (steps[currentStep].startsWith('> ASSINATURA')) {
+                        line.className = "text-clinical-500 font-bold animate-pulse";
+                    } else {
+                        line.className = "text-slate-300";
+                    }
+                    line.innerText = steps[currentStep];
+                    display.appendChild(line);
+                    display.scrollTop = display.scrollHeight;
+                    currentStep++;
+                } else {
+                    clearInterval(simInterval);
+                    btn.innerText = "Escaneamento Concluído!";
+                    btn.disabled = false;
+                    btn.className = "mt-4 w-full py-2 bg-emerald-500 text-darkspace-950 font-bold text-xs rounded-lg";
+                }
+            }, 1200);
+        }
+    </script>
+</body>
+</html>
